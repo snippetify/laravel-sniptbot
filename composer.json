@@ -1,0 +1,63 @@
+{
+    "name": "snippetify/laravel-sniptbot",
+    "description": "Sniptbot for laravel",
+    "type": "library",
+    "homepage": "https://github.com/snippetify/laravel-sniptbot",
+    "keywords": [
+        "crawler",
+        "scraper",
+        "sniffer",
+        "spider",
+        "sniptbot",
+        "sniffing",
+        "crawling",
+        "scraping",
+        "snippet",
+        "code snippet",
+        "sniptbot"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evens Pierre",
+            "email": "pierrevensy@gmail.com"
+        },
+        {
+            "name": "Snippetify Community",
+            "homepage": "https://github.com/snippetify"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Snippetify\\Sniptbot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Snippetify\\Sniptbot\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.3.0",
+        "illuminate/support": "^5|^6|^7",
+        "snippetify/snippet-sniffer": "dev-master"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8|^4.0|^5.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Snippetify\\Sniptbot\\SniptbotServiceProvider"
+            ],
+            "aliases": {
+                "Sniffer": "Snippetify\\Sniptbot\\Facades\\Sniffer",
+                "Crawler": "Snippetify\\Sniptbot\\Facades\\Crawler"
+            }
+        }
+    }
+}

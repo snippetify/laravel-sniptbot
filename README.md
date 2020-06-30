@@ -90,7 +90,7 @@ return [
 ];
 ```
 
-##### Sniffing from search engine api
+#### Sniffing from search engine api
 
 ```php
 use Snippetify\Sniptbot\Facades\Sniffer;
@@ -100,7 +100,7 @@ use Snippetify\Sniptbot\Facades\Sniffer;
 $snippets = Sniffer::fetch('js array contains value');
 ```
 
-##### Crawl url seeds
+#### Crawl url seeds
 
 ```php
 use Snippetify\Sniptbot\Facades\Crawler;

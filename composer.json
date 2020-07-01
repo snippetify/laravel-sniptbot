@@ -39,7 +39,7 @@
         }
     },
     "require": {
-        "php": "^7.3.0",
+        "php": "^7.2",
         "illuminate/support": "^5|^6|^7",
         "snippetify/snippet-sniffer": "dev-master"
     },
